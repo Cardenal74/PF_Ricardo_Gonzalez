@@ -2,6 +2,7 @@
 import MainLayout from "../../layouts/MainLayout.astro";
 import Header from "../../components/Header.astro";
 import Hero from "../../components/Hero.astro";
+import Services from "../../components/Services.astro";
 
 import { useTranslations } from "../../i18n";
 
@@ -10,7 +11,8 @@ const t = useTranslations("en");
 
 <MainLayout title={t("site.title")} description={t("site.description")}>
     <Header />
-     <main>
+    <main>
         <Hero />
+        <Services />
     </main>
 </MainLayout>
